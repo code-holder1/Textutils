@@ -3,8 +3,8 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import TextArea from "./Components/TextArea";
 import Alert from "./Components/Alert";
-// import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-// import About from './Components/About';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./Components/About";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      {/* <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <Router>
         <Navbar title="TextUtils" toggleMode={toggleMode} mode={mode} />
         <Alert alert={alert} />
         <Routes>
@@ -47,11 +47,7 @@ function App() {
           />
           <Route exact path="/about" element={<About mode={mode} />} />
         </Routes>
-      </Router> */}
-      <Navbar title="TextUtils" toggleMode={toggleMode} mode={mode} />   
-      <Alert alert={alert} />
-      <TextArea mode={mode} getAlert={getAlert} />
-      {/* <About mode={mode} /> */}
+      </Router>
     </>
   );
 }

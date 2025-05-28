@@ -5,7 +5,7 @@ export default function About(props) {
     <div
       className={`container my-3 `}
       style={{
-        backgroundColor: props.mode === "dark" ? "#343434" : "white",
+        backgroundColor: props.mode === "dark" ? "#13344a" : "white",
         color: props.mode === "light" ? "black" : "white",
       }}
     >
@@ -14,7 +14,7 @@ export default function About(props) {
         <div
           className="accordion-item"
           style={{
-            backgroundColor: props.mode === "dark" ? "#575757" : "white",
+            backgroundColor: props.mode === "dark" ? "rgb(39 78 104)" : "white",
             color: props.mode === "light" ? "black" : "white",
           }}
         >
@@ -27,11 +27,11 @@ export default function About(props) {
               aria-expanded="true"
               aria-controls="collapseOne"
               style={{
-                backgroundColor: props.mode === "dark" ? "#575757" : "white",
+                backgroundColor: props.mode === "dark" ? "rgb(39 78 104)" : "white",
                 color: props.mode === "light" ? "black" : "white",
               }}
             >
-              Accordion Item #1
+              <strong>Analyze Your text</strong>
             </button>
           </h2>
           <div
@@ -40,14 +40,8 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              <strong>This is the first item’s accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It’s also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              Textutils gives you a way to analyze your text quickly and
+              efficiently. Be it word count, character count or
             </div>
           </div>
         </div>
@@ -61,11 +55,11 @@ export default function About(props) {
               aria-expanded="false"
               aria-controls="collapseTwo"
               style={{
-                backgroundColor: props.mode === "dark" ? "#575757" : "white",
+                backgroundColor: props.mode === "dark" ? "rgb(39 78 104)" : "white",
                 color: props.mode === "light" ? "black" : "white",
               }}
             >
-              Accordion Item #2
+              <strong>Free to use</strong>
             </button>
           </h2>
           <div
@@ -73,19 +67,15 @@ export default function About(props) {
             className="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
             style={{
-              backgroundColor: props.mode === "dark" ? "#575757" : "white",
+              backgroundColor: props.mode === "dark" ? "rgb(39 78 104)" : "white",
               color: props.mode === "light" ? "black" : "white",
             }}
           >
             <div className="accordion-body">
-              <strong>This is the second item’s accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It’s also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              Textutils is a free character counter tool that provides instant
+              character count & word count statistics for a given text.
+              Textutils reports the number of words and characters. Thus it is
+              suitable for writing text with word/ character limit.
             </div>
           </div>
         </div>
@@ -99,11 +89,11 @@ export default function About(props) {
               aria-expanded="false"
               aria-controls="collapseThree"
               style={{
-                backgroundColor: props.mode === "dark" ? "#575757" : "white",
+                backgroundColor: props.mode === "dark" ? "rgb(39 78 104)" : "white",
                 color: props.mode === "light" ? "black" : "white",
               }}
             >
-              Accordion Item #3
+              <strong>Browser Compatible</strong>
             </button>
           </h2>
           <div
@@ -111,19 +101,15 @@ export default function About(props) {
             className="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
             style={{
-              backgroundColor: props.mode === "dark" ? "#575757" : "white",
+              backgroundColor: props.mode === "dark" ? "rgb(39 78 104)" : "white",
               color: props.mode === "light" ? "black" : "white",
             }}
           >
             <div className="accordion-body">
-              <strong>This is the third item’s accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It’s also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              This word counter software works in any web browsers such as
+              Chrome, Firefox, Internet Explorer, Safari, Opera. It suits to
+              count characters in facebook, blog, books, excel document, pdf
+              document, essays, etc.
             </div>
           </div>
         </div>
